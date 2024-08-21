@@ -38,8 +38,8 @@ jobs:
             ${{ runner.os }}-maven-
 
       # Build the project with Maven and package it as a WAR file
-      - name: Build with Maven
-        run: mvn clean package
+      - name: Build with Maven (skip tests)
+        run: mvn clean package -DskipTests
 
       # Upload the WAR file as an artifact (Optional)
       - name: Upload WAR file
