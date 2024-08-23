@@ -47,3 +47,8 @@ jobs:
         with:
           name: application-war
           path: target/*.war
+
+      - name: Notify Jenkins
+        if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        run: |
+          curl -X POST https://6866-103-139-5-226.ngrok-free.app//job/InssuredAssurance-Deployment-Pipeline/build?token=115335517d45c6a2f55e8f1a79617302c5
