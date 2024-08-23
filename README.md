@@ -20,6 +20,9 @@ To create a CI/CD pipeline workflow using GitHub Actions to automate the deploym
 - GitHub
 - GitHub Actions
 
+## Pipeline Flow Design
+![](https://i.ibb.co/zS0k03y/flow.png)
+
 ## Tasks
 
 I completed following tasks as part of setting up this project
@@ -48,5 +51,3 @@ I completed following tasks as part of setting up this project
 
 ## Additional Tasks
 - **Setup Domain Forwarding** for forwarding public domain to http://localhost:8080 using ```ngrok```, this helps in setting up webhooks between Jenkins & GitHub
-
-## Demo
